@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/gg">
+
+                <item android:checkable="true"
+                    android:id="@+id/gfat"
+                    android:icon="@drawable/ic_close_mm_24"
+                    android:title="Faturamento" />
+
+                <item
+                    android:checkable="true"
+                    android:id="@+id/germen"
+                    android:icon="@drawable/ic_mensal_24"
+                    android:title="Gerar Menselidades"
+                    android:visible="false"/>
+
+                 />
+
+                <item
+                    android:checkable="true"
+                    android:id="@+id/statcli"
+                    android:icon="@drawable/ic_baseline_account_box_24"
+                    android:title="Status Clientes"
+                    android:visible="false" />
+
+                <item
+                    android:checkable="true"
+                    android:id="@+id/fatlink"
+                    android:icon="@drawable/ic_leak_add_24"
+                    android:title="Faturamento Link"
+                    android:visible="false"/>
+
+                <item
+                    android:checkable="true"
+                    android:id="@+id/despesas"
+                    android:icon="@drawable/ic_payment_24"
+                    android:title="Despesas"
+                    android:visible="false"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/tt">
+
+        <item android:checkable="true"
+            android:id="@+id/gertitulos"
+            android:icon="@drawable/ic_close_mm_24"
+            android:title="Gerenciar Títulos" />
+
+        <item android:checkable="true"
+            android:id="@+id/listartitulos"
+            android:icon="@drawable/ic_list_alt_24"
+            android:title="Listar Títulos"
+            android:visible="false"/>
+
+        <item android:checkable="true"
+            android:id="@+id/titulos"
+            android:icon="@drawable/ic_list_alt_24"
+            android:title="Gerar Títulos para Banco"
+            android:visible="false"/>
+        <item android:checkable="true"
+            android:id="@+id/baixatit"
+            android:icon="@drawable/ic_baseline_check_box_24"
+            android:title="Baixar Títulos"
+            android:visible="false"/>
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/cc">
+            <item android:checkable="true"
+                android:id="@+id/gcad"
+                android:icon="@drawable/ic_close_mm_24"
+                android:title="Cadastros" />
+
+        <item
+            android:checkable="true"
+            android:id="@+id/cadadesao"
+            android:icon="@drawable/ic_adesao_add_24"
+            android:title="Adesão"
+            android:visible="false"/>
+
+        <item
+            android:checkable="true"
+            android:id="@+id/cadprod"
+            android:icon="@drawable/ic_baseline_category_24"
+            android:title="@string/produtos"
+            android:visible="false"/>
+        <item
+            android:checkable="true"
+            android:id="@+id/cadcob"
+            android:icon="@drawable/ic_attach_money_azul_24"
+            android:title="Cobranças"
+            android:visible="false"/>
+        <item
+            android:checkable="true"
+            android:id="@+id/cadlink"
+            android:icon="@drawable/ic_leak_add_24"
+            android:title="@string/link"
+            android:visible="false"/>
+
+        <item android:checkable="true"
+            android:id="@+id/setores"
+            android:icon="@drawable/ic_extension_24"
+            android:title="Setores"
+            android:visible="false"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/ggc">
+
+        <item android:checkable="true"
+            android:id="@+id/gcad2"
+            android:icon="@drawable/ic_close_mm_24"
+            android:title="Configurar" />
+
+
+
+        <item android:checkable="true"
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Settings"
+            android:visible="false"/>
+
+
+        <item android:checkable="true"
+            android:id="@+id/perfil"
+            android:icon="@drawable/ic_person_azul_24"
+            android:title="Perfil"
+            android:visible="false"/>
+
+        <item android:checkable="true"
+        android:id="@+id/cadusu"
+        android:icon="@drawable/ic_person_add_24"
+        android:title="Cadastrar Usuario"
+        android:visible="false"/>
+
+        <item android:checkable="true"
+            android:id="@+id/perfil_usu"
+            android:icon="@drawable/ic_baseline_person_outline_24"
+            android:title="Perfil de Usuario"
+            android:visible="false"/>
+
+    </group>
+    <item android:title="app"
+        >
+        <menu>
+
+
+            <item android:checkable="true"
+                android:id="@+id/deslogar"
+                android:icon="@drawable/ic_seta_24dp"
+                android:title="Deslogar" />
+
+            <item android:checkable="true"
+                android:id="@+id/sair"
+                android:icon="@drawable/ic_logout"
+                android:title="Sair" />
+        </menu>
+    </item>
+</menu>

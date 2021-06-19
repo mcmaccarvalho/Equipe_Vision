@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cltit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.administracao.Frag_Baixa_Titulo">
+
+
+    <TextView
+        android:id="@+id/tttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Filtros"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintStart_toStartOf="@+id/cardView6"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvtitulos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttitle" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="?attr/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tttitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@color/branco">
+
+            <TextView
+                android:id="@+id/ttdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:ems="7"
+                android:text="Data Vencimento"
+                android:textColor="@color/fundo_azul_escuro"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/lldata"
+                app:layout_constraintTop_toBottomOf="@+id/cardView15" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView14"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardBackgroundColor="?attr/colorAccent"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView16"
+                app:layout_constraintEnd_toEndOf="@+id/ttdata"
+                app:layout_constraintStart_toStartOf="@+id/ttdata"
+                app:layout_constraintTop_toTopOf="@+id/cardView16">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="@color/branco">
+
+                    <TextView
+                        android:id="@+id/txtdata"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="00/00/0000"
+                        android:textColor="@color/fundo_azul_escuro"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/ttmes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="8"
+                android:text="Mês Vencimento"
+                android:textColor="@color/fundo_azul_escuro"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/lldata"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/ttdata"
+                app:layout_constraintStart_toStartOf="@+id/llmes"
+                app:layout_constraintTop_toTopOf="@+id/ttdata"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llmes"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/ttmes"
+                app:layout_constraintEnd_toStartOf="@+id/ttmes"
+                app:layout_constraintTop_toTopOf="@+id/ttmes"></LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txttodos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Todos os títulos"
+                android:textColor="@color/fundo_azul_escuro"
+                app:layout_constraintStart_toEndOf="@+id/lltodos"
+                app:layout_constraintTop_toTopOf="@+id/ttmes" />
+
+            <LinearLayout
+                android:id="@+id/lltodos"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/txttodos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txttodos"></LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:cardBackgroundColor="?attr/colorAccent"
+                app:layout_constraintEnd_toEndOf="@+id/ttmes"
+                app:layout_constraintStart_toStartOf="@+id/ttmes"
+                app:layout_constraintTop_toBottomOf="@+id/ttmes">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@color/branco">
+
+                    <Spinner
+                        android:id="@+id/spmes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="?attr/colorAccent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView61"
+                app:layout_constraintStart_toStartOf="@+id/textView61"
+                app:layout_constraintTop_toBottomOf="@+id/textView61">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@color/branco">
+
+                    <Spinner
+                        android:id="@+id/sptipocob"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:text="Tipo Título"
+                android:textColor="@color/fundo_azul_escuro"
+                app:layout_constraintStart_toStartOf="@+id/lltodos"
+                app:layout_constraintTop_toTopOf="@+id/ttdata" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Código de Barras(Todos os títulos)"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgcode"
+        app:layout_constraintStart_toEndOf="@+id/imgcode" />
+
+    <ImageView
+        android:id="@+id/imgcode"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imgcode"
+        app:layout_constraintTop_toBottomOf="@+id/imgcode">
+
+        <EditText
+            android:id="@+id/edtbarras"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/branco"
+            android:inputType="textNoSuggestions|number" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtlimpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Limpar Código"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView8"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+    <TextView
+        android:id="@+id/txttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Titulos a Baixar para o Período"
+        android:textColor="@android:color/holo_red_dark"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

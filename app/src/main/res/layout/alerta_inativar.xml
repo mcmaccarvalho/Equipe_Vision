@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clinativar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Inativar"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="O ítem selecionado possui contas atreladas a ele e é necessário direciona-las antes da inativação."
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintEnd_toEndOf="@+id/textView42"
+        app:layout_constraintStart_toStartOf="@+id/textView42"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView29">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btcancel"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/cancelar"
+                android:textColor="@color/fundo_azul_escuro"
+                app:rippleColor="@color/fundo_azul_escuro"
+                app:strokeColor="@color/fundo_azul_escuro" />
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btcad"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Direcionar"
+                android:textColor="@color/fundo_azul_escuro"
+                app:rippleColor="@color/fundo_azul_escuro"
+                app:strokeColor="@color/fundo_azul_escuro" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView116"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo:"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txttipo"
+        app:layout_constraintStart_toStartOf="@+id/textView50"
+        app:layout_constraintTop_toTopOf="@+id/txttipo" />
+
+    <TextView
+        android:id="@+id/txttipo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintEnd_toEndOf="@+id/textView50"
+        app:layout_constraintStart_toEndOf="@+id/textView116"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/textView121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtnome"
+        app:layout_constraintStart_toStartOf="@+id/textView116"
+        app:layout_constraintTop_toTopOf="@+id/txtnome" />
+
+    <TextView
+        android:id="@+id/txtnome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintEnd_toEndOf="@+id/txttipo"
+        app:layout_constraintStart_toEndOf="@+id/textView121"
+        app:layout_constraintTop_toBottomOf="@+id/txttipo" />
+
+    <TextView
+        android:id="@+id/textView123"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Para direcionar TODAS selecione abaixo o destino e clique em Direcionar, ou para direcionar individualmente cancele e efetue as alterações antes de inativar o item."
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintEnd_toEndOf="@+id/txtnome"
+        app:layout_constraintStart_toStartOf="@+id/textView121"
+        app:layout_constraintTop_toBottomOf="@+id/txtnome" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView124"
+        app:layout_constraintStart_toStartOf="@+id/textView123"
+        app:layout_constraintTop_toTopOf="@+id/textView124"
+        app:srcCompat="@drawable/ic_alert_24" />
+
+    <TextView
+        android:id="@+id/textView124"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Não é possivel REVERTER essa ação !!!"
+        android:textColor="@color/vermelho"
+        app:layout_constraintEnd_toEndOf="@+id/textView123"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView123" />
+
+    <TextView
+        android:id="@+id/textView125"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Selecione"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/cardView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView124" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView125">
+
+        <Spinner
+            android:id="@+id/sptipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

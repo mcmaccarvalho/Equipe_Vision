@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bbdefb</color>
+    <color name="colorPrimaryDark">#8aacc8</color>
+    <color name="colorAccent">#26418f</color>
+<!--    #bbdefb-->
+    <color name="branco">#FFFFFF</color>
+    <color name="selec">#0097A7</color>
+    <color name="gray">#D4D8D8</color>
+    <color name="verde_claro">#76FF03</color>
+    <color name="preto">#000000</color>
+    <color name="teste">#FFAB00</color>
+
+    <color name="gerar_banco">#880E4F</color>
+    <color name="vermelho">#FF0000</color>
+    <color name="mitem">#E83F3F</color>
+    <color name="holored">#FFcc0000</color>
+    <color name="fundo_azul_escuro">#3D77C7</color>
+    <color name="fundo_verde_escuro">#1F6612</color>
+    <color name="riplle_bt_amarelo">#FFEB3B</color>
+    <color name="transparente">#00FFFFFF</color>
+
+    <color name="corfat">#1E88E5</color>
+    <color name="cormensal">#48FF94</color>
+    <color name="coradesao">#FFAB00</color>
+    <color name="corinad">#FFcc0000</color>
+    <color name="cordesp">#43A047</color>
+    <color name="corplano">#7FABE6</color>
+    <color name="cortv">#FFFF88</color>
+    <color name="corresult">#303F9F</color>
+    <color name="aberto">#FFAB00</color>
+    <color name="baixado">#43A047</color>
+
+    <color name="cordlink">#1E88E5</color>
+    <color name="cordequip">#FFcc0000</color>
+    <color name="cordmat">#FFAB00</color>
+    <color name="cordmanu">#43A047</color>
+    <color name="cordserv">#1F6612</color>
+    <color name="cordout">#880E4F</color>
+
+
+
+
+
+    <color name="azul2">@android:color/holo_orange_dark</color>
+    <color name="azul">#26418f</color>
+    <color name="fundoadapter">#C5E1A5</color>
+    <color name="fundoadaptertrans">#7CFFEE58</color>
+
+
+    <color name="tabsel">#B4D6B4</color>
+</resources>

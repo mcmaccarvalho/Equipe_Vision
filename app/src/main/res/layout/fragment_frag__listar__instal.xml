@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.administracao.Frag_Listar_Instal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="?attr/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@color/branco">
+
+            <TextView
+                android:id="@+id/textView88"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ordenar por:"
+                android:textColor="@color/fundo_azul_escuro"
+                app:layout_constraintEnd_toEndOf="@+id/rgordem"
+                app:layout_constraintStart_toStartOf="@+id/rgordem"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/rgordem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView88">
+
+                <RadioButton
+                    android:id="@+id/rbcliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/teste"
+                    android:checked="true"
+                    android:text="Cliente"
+                    android:textColor="@color/fundo_azul_escuro" />
+
+                <RadioButton
+                    android:id="@+id/rbinstal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/teste"
+                    android:text="Instalação"
+                    android:textColor="@color/fundo_azul_escuro" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/setacli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_baseline_arrow_downward_24"
+                app:layout_constraintStart_toEndOf="@+id/rgordem"
+                app:layout_constraintTop_toTopOf="@+id/rgordem" />
+
+            <ImageView
+                android:id="@+id/setainst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_baseline_arrow_downward_24"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/rgordem"
+                app:layout_constraintStart_toEndOf="@+id/rgordem" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:textColor="@color/fundo_azul_escuro"
+                app:layout_constraintEnd_toEndOf="@+id/txttotcli"
+                app:layout_constraintStart_toStartOf="@+id/txttotcli"
+                app:layout_constraintTop_toTopOf="@+id/textView88" />
+
+            <TextView
+                android:id="@+id/txttotcli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="4dp"
+                android:text="0"
+                android:textColor="@color/fundo_azul_escuro"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/textView88"
+                app:layout_constraintTop_toTopOf="@+id/rgordem" />
+
+            <TextView
+                android:id="@+id/txttotins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginBottom="4dp"
+                android:text="0"
+                android:textColor="@color/fundo_azul_escuro"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/rgordem"
+                app:layout_constraintStart_toEndOf="@+id/textView88" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvnome"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="?attr/colorAccent"
+        app:cardElevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@color/branco"
+            app:layout_constraintEnd_toStartOf="@+id/textView87"
+            app:layout_constraintStart_toStartOf="@+id/textView87">
+
+
+            <TextView
+                android:id="@+id/textView109"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Atraso Médio"
+                android:textColor="@color/fundo_azul_escuro"
+                app:layout_constraintStart_toStartOf="@+id/textView90"
+                app:layout_constraintTop_toBottomOf="@+id/textView90" />
+
+            <TextView
+                android:id="@+id/txtatrasom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="0"
+                android:textColor="@color/fundo_azul_escuro"
+                app:layout_constraintBottom_toBottomOf="@+id/textView109"
+                app:layout_constraintStart_toEndOf="@+id/textView109"
+                app:layout_constraintTop_toTopOf="@+id/textView109" />
+
+            <TextView
+                android:id="@+id/txtcliente"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/fundo_azul_escuro"
+                app:layout_constraintBottom_toBottomOf="@+id/textView89"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView89"
+                app:layout_constraintTop_toTopOf="@+id/textView89" />
+
+            <TextView
+                android:id="@+id/txtinstal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                android:textColor="@color/fundo_azul_escuro"
+                app:layout_constraintBottom_toBottomOf="@+id/textView90"
+                app:layout_constraintStart_toEndOf="@+id/textView90"
+                app:layout_constraintTop_toTopOf="@+id/textView90" />
+
+            <TextView
+                android:id="@+id/textView89"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Cliente:"
+                android:textColor="@color/fundo_azul_escuro"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="Instalação:"
+                android:textColor="@color/fundo_azul_escuro"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView89" />
+
+            <TextView
+                android:id="@+id/textView91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Títulos"
+                android:textColor="@color/fundo_azul_escuro"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btcad"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="2"
+                android:text="Voltar"
+                android:textColor="@color/fundo_azul_escuro"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtcliente"
+                app:rippleColor="@color/fundo_azul_escuro"
+                app:strokeColor="@color/fundo_azul_escuro" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvinstal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+</androidx.constraintlayout.widget.ConstraintLayout>

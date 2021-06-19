@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "100857124631",
+    "project_id": "equipe-vision-5cb37",
+    "storage_bucket": "equipe-vision-5cb37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100857124631:android:0a3df5bea388cb20e64952",
+        "android_client_info": {
+          "package_name": "com.ponto.ideal.solucoes.equipe_vision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100857124631-ct85d35u58vpuvmh4lf8h5o2hajf4p1b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ponto.ideal.solucoes.equipe_vision",
+            "certificate_hash": "f5f4ce589e281aa99c79b5196ce401ea60bd9dfb"
+          }
+        },
+        {
+          "client_id": "100857124631-2cti1le95jnl3sr6fdf144nd3mv8e0oj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmYoZ4Xte-JHSZUpCPnvA2qAsWGrZZOhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100857124631-2cti1le95jnl3sr6fdf144nd3mv8e0oj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

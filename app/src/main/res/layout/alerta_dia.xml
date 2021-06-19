@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtdia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="8dp"
+        android:text="01"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textView53"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <TextView
+        android:id="@+id/txtdia2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="02"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintStart_toEndOf="@+id/txtdia1"
+        app:layout_constraintTop_toTopOf="@+id/txtdia1" />
+
+    <TextView
+        android:id="@+id/txtdia3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="03"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintStart_toEndOf="@+id/txtdia2"
+        app:layout_constraintTop_toTopOf="@+id/txtdia1" />
+
+    <TextView
+        android:id="@+id/txtdia4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="04"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintStart_toEndOf="@+id/txtdia3"
+        app:layout_constraintTop_toTopOf="@+id/txtdia1" />
+
+    <TextView
+        android:id="@+id/txtdia5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="05"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintStart_toEndOf="@+id/txtdia4"
+        app:layout_constraintTop_toTopOf="@+id/txtdia1" />
+
+    <TextView
+        android:id="@+id/txtdia6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="06"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintStart_toEndOf="@+id/txtdia5"
+        app:layout_constraintTop_toTopOf="@+id/txtdia1" />
+
+
+    <TextView
+        android:id="@+id/txtdia7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="07"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txtdia1"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia1" />
+
+    <TextView
+        android:id="@+id/txtdia8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="08"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia7"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia1" />
+
+    <TextView
+        android:id="@+id/txtdia9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="09"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia8"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia1" />
+
+    <TextView
+        android:id="@+id/txtdia10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="10"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia9"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia1" />
+
+    <TextView
+        android:id="@+id/txtdia11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="11"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia10"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia1" />
+
+    <TextView
+        android:id="@+id/txtdia12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="12"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia11"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia1" />
+
+    <TextView
+        android:id="@+id/txtdia13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="13"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txtdia7"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia8" />
+
+    <TextView
+        android:id="@+id/txtdia14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="14"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia13"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia9" />
+
+    <TextView
+        android:id="@+id/txtdia15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="15"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia14"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia9" />
+
+    <TextView
+        android:id="@+id/txtdia16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="16"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia15"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia9" />
+
+    <TextView
+        android:id="@+id/txtdia17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="17"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia16"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia9" />
+
+    <TextView
+        android:id="@+id/txtdia18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="18"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia17"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia9" />
+
+    <TextView
+        android:id="@+id/txtdia19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="19"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txtdia13"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia13" />
+
+    <TextView
+        android:id="@+id/txtdia20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="20"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia19"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia13" />
+
+    <TextView
+        android:id="@+id/txtdia21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="21"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia20"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia13" />
+
+    <TextView
+        android:id="@+id/txtdia22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="22"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia21"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia13" />
+
+    <TextView
+        android:id="@+id/txtdia23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="23"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia22"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia13" />
+
+    <TextView
+        android:id="@+id/txtdia24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="24"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia23"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia13" />
+
+    <TextView
+        android:id="@+id/txtdia25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="25"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txtdia19"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia19" />
+
+    <TextView
+        android:id="@+id/txtdia26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="26"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia25"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia20" />
+
+    <TextView
+        android:id="@+id/txtdia27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="27"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia26"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia20" />
+
+    <TextView
+        android:id="@+id/txtdia28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="28"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia27"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia20" />
+
+    <TextView
+        android:id="@+id/txtdia29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="29"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/txtdia28"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia20" />
+
+    <TextView
+        android:id="@+id/txtdia30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:padding="8dp"
+        android:text="30"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtdia29"
+        app:layout_constraintTop_toBottomOf="@+id/txtdia20" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Selecione Dia do Vencimento"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

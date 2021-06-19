@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/svconsult"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.administracao.Frag_Consulta_Cli">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp">
+
+                <TextView
+                    android:id="@+id/txtstat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:ems="8"
+                    android:text="Inadimplente"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/llstat"
+                    app:layout_constraintTop_toBottomOf="@+id/ttstat" />
+
+                <LinearLayout
+                    android:id="@+id/llstat"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/gray"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtstat"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txtstat"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtdata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="00/00/0000"
+                    android:textColor="@color/fundo_azul_escuro"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txtstat"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data Cadastro:"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/txtdata"
+                    app:layout_constraintStart_toStartOf="@+id/txtdata"
+                    app:layout_constraintTop_toTopOf="@+id/ttstat" />
+
+                <TextView
+                    android:id="@+id/ttstat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Status"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/txtstat"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtapelido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="012345678912355"
+                    android:textAlignment="center"
+                    android:textColor="@color/fundo_azul_escuro"
+                    app:layout_constraintBottom_toBottomOf="@+id/txapel"
+                    app:layout_constraintStart_toEndOf="@+id/txapel"
+                    app:layout_constraintTop_toTopOf="@+id/txapel" />
+
+                <TextView
+                    android:id="@+id/txcpf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="3"
+                    android:text="CPF:"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/llstat" />
+
+                <TextView
+                    android:id="@+id/txtcpf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:ems="8"
+                    android:text="000,714,168,00"
+                    android:textColor="@color/fundo_azul_escuro"
+                    app:layout_constraintBottom_toBottomOf="@+id/txcpf"
+                    app:layout_constraintStart_toEndOf="@+id/txcpf"
+                    app:layout_constraintTop_toTopOf="@+id/txcpf" />
+
+                <TextView
+                    android:id="@+id/txapel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:ems="3"
+                    android:text="Apel.:"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtcpf"
+                    app:layout_constraintStart_toEndOf="@+id/txtcpf"
+                    app:layout_constraintTop_toTopOf="@+id/txtcpf" />
+
+                <TextView
+                    android:id="@+id/txtnome"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoSizeStepGranularity="3dp"
+                    android:autoSizeTextType="uniform"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txnome"
+                    app:layout_constraintTop_toBottomOf="@+id/txtcpf" />
+
+                <TextView
+                    android:id="@+id/txend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ems="3"
+                    android:text="End.:"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtend"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txtend" />
+
+                <TextView
+                    android:id="@+id/txtcompl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoSizeStepGranularity="3dp"
+                    android:autoSizeTextType="uniform"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txcompl"
+                    app:layout_constraintTop_toBottomOf="@+id/txtend" />
+
+                <TextView
+                    android:id="@+id/txtend"
+                    android:layout_width="0dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoSizeStepGranularity="3dp"
+                    android:autoSizeTextType="uniform"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txend"
+                    app:layout_constraintTop_toBottomOf="@+id/txtemail" />
+
+                <TextView
+                    android:id="@+id/txtemail"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:autoSizeStepGranularity="3dp"
+                    android:autoSizeTextType="uniform"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/txemail"
+                    app:layout_constraintTop_toBottomOf="@+id/txtnome" />
+
+                <TextView
+                    android:id="@+id/txnome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="3dp"
+                    android:ems="3"
+                    android:text="Nome:"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtnome"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txtnome" />
+
+                <TextView
+                    android:id="@+id/txcompl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:ems="3"
+                    android:text="Cmpl.:"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtnum"
+                    app:layout_constraintStart_toEndOf="@+id/txtnum"
+                    app:layout_constraintTop_toTopOf="@+id/txtnum" />
+
+                <TextView
+                    android:id="@+id/txtnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:ems="3"
+                    android:text="00000"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/txnum"
+                    app:layout_constraintTop_toBottomOf="@+id/txtend" />
+
+                <TextView
+                    android:id="@+id/txnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ems="3"
+                    android:text="Nº.:"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtnum"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txtnum" />
+
+                <TextView
+                    android:id="@+id/txemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:ems="3"
+                    android:text="email:"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtemail"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txtemail" />
+
+                <TextView
+                    android:id="@+id/txtfone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="654654654"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/txfone"
+                    app:layout_constraintTop_toBottomOf="@+id/txtcompl" />
+
+                <TextView
+                    android:id="@+id/txcep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ems="3"
+                    android:text="@string/cep"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtcep"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txtcep" />
+
+                <TextView
+                    android:id="@+id/txtcep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:ems="5"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/txcep"
+                    app:layout_constraintTop_toBottomOf="@+id/txtnum" />
+
+                <TextView
+                    android:id="@+id/txfone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:ems="3"
+                    android:text="Tel.:"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtfone"
+                    app:layout_constraintStart_toEndOf="@+id/txtcep"
+                    app:layout_constraintTop_toTopOf="@+id/txtfone" />
+
+                <TextView
+                    android:id="@+id/txtedtcli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:text="Editar Cliente"
+                    android:textColor="@color/fundo_azul_escuro"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtfone" />
+
+                <ImageView
+                    android:id="@+id/imgedtcli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/ic_edit_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtedtcli"
+                    app:layout_constraintEnd_toStartOf="@+id/txtedtcli"
+                    app:layout_constraintTop_toTopOf="@+id/txtedtcli"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#D32F2F"
+            android:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpclass"
+            android:layout_width="0dp"
+            android:layout_height="280dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtaddins" />
+
+        <TextView
+            android:id="@+id/txtaddins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Add Instalação"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <ImageView
+            android:id="@+id/imgaddins"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_leak_add_24"
+            app:layout_constraintBottom_toBottomOf="@+id/txtaddins"
+            app:layout_constraintEnd_toStartOf="@+id/txtaddins"
+            app:layout_constraintTop_toTopOf="@+id/txtaddins" />
+
+        <TextView
+            android:id="@+id/ttinst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Instalações"
+            android:textColor="@color/fundo_azul_escuro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/txtqtdeins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/fundo_azul_escuro"
+            app:layout_constraintBottom_toBottomOf="@+id/ttinst"
+            app:layout_constraintStart_toEndOf="@+id/ttinst"
+            app:layout_constraintTop_toTopOf="@+id/ttinst" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

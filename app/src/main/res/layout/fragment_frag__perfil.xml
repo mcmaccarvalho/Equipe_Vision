@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clcad_visitante"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:forceHasOverlappingRendering="false"
+    android:foregroundGravity="center_horizontal"
+    android:minWidth="250dp">
+
+    <ProgressBar
+        android:id="@+id/mprogressBar"
+        style="@android:style/Widget.Holo.ProgressBar.Small"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="144dp"
+        android:elevation="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/nick"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView1"
+        app:layout_constraintStart_toStartOf="@+id/cardView1" />
+
+    <TextView
+        android:id="@+id/txtcontnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/_0_15"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/txtselavatxgal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/selecione_avatar_ou_imagem_da_galeria"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView1"
+        app:layout_constraintStart_toStartOf="@+id/cardView1"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/branco"
+        android:backgroundTint="@color/branco"
+        android:padding="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/txttitle"
+        app:layout_constraintStart_toStartOf="@+id/txttitle"
+        app:layout_constraintTop_toBottomOf="@+id/txttitle"
+        app:strokeColor="@color/fundo_azul_escuro"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etapelido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:autofillHints="@string/nick"
+                android:gravity="center_horizontal"
+                android:inputType="textCapCharacters"
+                android:maxLength="15"
+                android:textColor="@color/fundo_azul_escuro"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/txttitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/como_gostaria_de_ser_chamado"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+
+        android:id="@+id/btsalvar"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/salvar"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="@+id/cardView1"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:rippleColor="@color/fundo_azul_escuro"
+        app:strokeColor="@color/fundo_azul_escuro" />
+
+    <Button
+
+        android:id="@+id/btcancelar"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/cancelar"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:rippleColor="@color/fundo_azul_escuro"
+        app:strokeColor="@color/fundo_azul_escuro" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/cardView1"
+        app:layout_constraintStart_toStartOf="@+id/cardView1"
+        app:layout_constraintTop_toBottomOf="@id/imgperfil">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avat1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/avatar"
+                android:src="@drawable/fotoblank"
+                 />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avat2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/avatar"
+                android:src="@drawable/ic_wifi_24" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avat3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/avatar"
+                android:src="@drawable/ic_build_24" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avat4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/avatar"
+                android:src="@drawable/ic_contactless_24" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avat5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/avatar"
+                android:src="@drawable/ic_menu_gallery" />
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgperfil"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:cropToPadding="true"
+        android:src="@drawable/fotoblank"
+        app:civ_border_color="@color/fundo_azul_escuro"
+        app:civ_border_width="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView1"
+        app:layout_constraintStart_toStartOf="@+id/cardView1"
+        app:layout_constraintTop_toBottomOf="@+id/txtselavatxgal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Gallery"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

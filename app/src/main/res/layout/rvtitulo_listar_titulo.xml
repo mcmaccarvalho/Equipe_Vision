@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clboleto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/ttbanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Tipo:"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtbanco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtbanco" />
+
+    <TextView
+        android:id="@+id/txtbanco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="Carteira"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/ttbanco"
+        app:layout_constraintTop_toBottomOf="@+id/txtvcto" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Cliente:"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtcliente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtcliente" />
+
+    <TextView
+        android:id="@+id/txtcliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView48"
+        app:layout_constraintTop_toBottomOf="@+id/txtinstall" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Instalação:"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtinstall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtinstall" />
+
+    <TextView
+        android:id="@+id/txtinstall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:ems="3"
+        android:text="123456"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView50"
+        app:layout_constraintTop_toBottomOf="@+id/txtbanco" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor R$ "
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtbanco"
+        app:layout_constraintStart_toStartOf="@+id/textView71"
+        app:layout_constraintTop_toTopOf="@+id/txtbanco" />
+
+    <TextView
+        android:id="@+id/txtvalor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:ems="6"
+        android:text="9.999,00"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView56"
+        app:layout_constraintStart_toEndOf="@+id/textView56"
+        app:layout_constraintTop_toTopOf="@+id/textView56" />
+
+    <TextView
+        android:id="@+id/ttvcto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Vecto:"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtvcto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtvcto" />
+
+    <TextView
+        android:id="@+id/txtvcto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:ems="6"
+        android:text="00/00/0000"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/ttvcto"
+        app:layout_constraintTop_toBottomOf="@+id/txtdesc" />
+
+    <TextView
+        android:id="@+id/txtpgto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:ems="6"
+        android:text="00/00/0000"
+        android:textColor="@color/fundo_azul_escuro"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textView71"
+        app:layout_constraintTop_toTopOf="@+id/txtvcto" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/preto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcliente" />
+
+    <TextView
+        android:id="@+id/txtstat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Inadimplente"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintBottom_toBottomOf="@+id/txtdesc"
+        app:layout_constraintEnd_toStartOf="@+id/llstat"
+        app:layout_constraintTop_toTopOf="@+id/txtdesc" />
+
+    <LinearLayout
+        android:id="@+id/llstat"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/txtstat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtstat"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Pgto:"
+        android:textAlignment="textStart"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintBottom_toBottomOf="@+id/txtvcto"
+        app:layout_constraintStart_toEndOf="@+id/txtvcto"
+        app:layout_constraintTop_toTopOf="@+id/txtvcto" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Desc.:"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Pagamento Mensalidade"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintBottom_toBottomOf="@+id/textView83"
+        app:layout_constraintStart_toEndOf="@+id/textView83"
+        app:layout_constraintTop_toTopOf="@+id/textView83" />
+
+    <ImageView
+        android:id="@+id/imggerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtinstall"
+        app:layout_constraintEnd_toStartOf="@+id/txtgerar"
+        app:layout_constraintTop_toTopOf="@+id/txtinstall"
+        app:srcCompat="@drawable/ic_alert_24" />
+
+    <TextView
+        android:id="@+id/txtgerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Gerar Banco"
+        android:textColor="@color/fundo_azul_escuro"
+        app:layout_constraintBottom_toBottomOf="@+id/imggerar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imggerar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

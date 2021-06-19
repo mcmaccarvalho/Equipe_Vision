@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/home">
+    <fragment
+        android:id="@+id/home"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.home.Home"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_home_to_frag_Consulta_Cli"
+            app:destination="@id/frag_Consulta_Cli" />
+        <action
+            android:id="@+id/action_home_to_frag_Titulos"
+            app:destination="@id/frag_Titulos" />
+        <action
+            android:id="@+id/action_home_to_frag_Baixa_Titulo"
+            app:destination="@id/frag_Baixa_Titulo" />
+        <action
+            android:id="@+id/action_home_to_frag_Cad_Cli"
+            app:destination="@id/frag_Cad_Cli" />
+        <action
+            android:id="@+id/action_home_to_frag_Listar_Titulos"
+            app:destination="@id/frag_Listar_Titulos" />
+        <action
+            android:id="@+id/action_home_to_frag_Gerar_Mensalidades"
+            app:destination="@id/frag_Gerar_Mensalidades" />
+        <action
+            android:id="@+id/action_home_to_frag_Listar_Instal"
+            app:destination="@id/frag_Listar_Instal" />
+        <action
+            android:id="@+id/action_home_to_frag_Fat_Link"
+            app:destination="@id/frag_Fat_Link" />
+        <action
+            android:id="@+id/action_home_to_despesas_Operacionais"
+            app:destination="@id/despesas_Operacionais" />
+        <action
+            android:id="@+id/action_home_to_cad_Itens"
+            app:destination="@id/cad_Itens" />
+        <action
+            android:id="@+id/action_home_to_frag_Settings"
+            app:destination="@id/frag_Settings" />
+        <action
+            android:id="@+id/action_home_to_frag_Cadastrar_Usuario"
+            app:destination="@id/frag_Cadastrar_Usuario" />
+        <action
+            android:id="@+id/action_home_to_frag_Perifl_Usuario"
+            app:destination="@id/frag_Perifl_Usuario" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Consulta_Cli"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.administracao.Frag_Consulta_Cli"
+        android:label="fragment_frag__consulta__cli"
+        tools:layout="@layout/fragment_frag__consulta__cli" >
+        <action
+            android:id="@+id/action_frag_Consulta_Cli_to_home"
+            app:destination="@id/home"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_frag_Consulta_Cli_to_frag_Editar_Cliente"
+            app:destination="@id/frag_Editar_Cliente" />
+        <action
+            android:id="@+id/action_frag_Consulta_Cli_to_frag_Editar_Install"
+            app:destination="@id/frag_Editar_Install" />
+        <action
+            android:id="@+id/action_frag_Consulta_Cli_to_frag_Add_Install"
+            app:destination="@id/frag_Add_Install" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Editar_Cliente"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.administracao.Frag_Editar_Cliente"
+        android:label="Frag_Editar_Cliente" >
+        <action
+            android:id="@+id/action_frag_Editar_Cliente_to_frag_Consulta_Cli"
+            app:destination="@id/frag_Consulta_Cli"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/frag_Editar_Cliente"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Editar_Install"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.administracao.Frag_Editar_Install"
+        android:label="fragment_frag__editar__install"
+        tools:layout="@layout/fragment_frag__editar__install" >
+        <action
+            android:id="@+id/action_frag_Editar_Install_to_frag_Consulta_Cli"
+            app:destination="@id/frag_Consulta_Cli" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Add_Install"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.administracao.Frag_Add_Install"
+        android:label="Frag_Add_Install" >
+        <action
+            android:id="@+id/action_frag_Add_Install_to_frag_Consulta_Cli"
+            app:destination="@id/frag_Consulta_Cli" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Titulos"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.administracao.Frag_Titulos"
+        android:label="fragment_frag__titulos"
+        tools:layout="@layout/fragment_frag__titulos" >
+        <action
+            android:id="@+id/action_frag_Titulos_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Baixa_Titulo"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.administracao.Frag_Baixa_Titulo"
+        android:label="fragment_frag__baixa__titulo"
+        tools:layout="@layout/fragment_frag__baixa__titulo" >
+        <action
+            android:id="@+id/action_frag_Baixa_Titulo_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Cad_Cli"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.cadastro.Frag_Cad_Cli"
+        android:label="fragment_frag__cad__cli"
+        tools:layout="@layout/fragment_frag__cad__cli" >
+        <action
+            android:id="@+id/action_frag_Cad_Cli_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Listar_Titulos"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.administracao.Frag_Listar_Titulos"
+        android:label="Frag_Listar_Titulos" >
+        <action
+            android:id="@+id/action_frag_Listar_Titulos_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Gerar_Mensalidades"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.administracao.Frag_Gerar_Mensalidades"
+        android:label="fragment_frag__gerar__mensalidades"
+        tools:layout="@layout/fragment_frag__gerar__mensalidades" >
+        <action
+            android:id="@+id/action_frag_Gerar_Mensalidades_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Listar_Instal"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.administracao.Frag_Listar_Instal"
+        android:label="fragment_frag__listar__instal"
+        tools:layout="@layout/fragment_frag__listar__instal" >
+        <action
+            android:id="@+id/action_frag_Listar_Instal_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Fat_Link"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.administracao.Frag_Fat_Link"
+        android:label="fragment_frag__fat__link"
+        tools:layout="@layout/fragment_frag__fat__link" >
+        <action
+            android:id="@+id/action_frag_Fat_Link_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/despesas_Operacionais"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.administracao.Despesas_Operacionais"
+        android:label="Despesas_Operacionais" >
+        <action
+            android:id="@+id/action_despesas_Operacionais_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/cad_Itens"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.cadastro.Cad_Itens"
+        android:label="fragment_cad__itens"
+        tools:layout="@layout/fragment_cad__itens" >
+        <action
+            android:id="@+id/action_cad_Itens_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Settings"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.cadastro.Frag_Settings"
+        android:label="fragment_frag__settings"
+        tools:layout="@layout/fragment_frag__settings" >
+        <action
+            android:id="@+id/action_frag_Settings_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Cadastrar_Usuario"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.cadastro.Frag_Cadastrar_Usuario"
+        android:label="fragment_frag__cadastrar__usuario"
+        tools:layout="@layout/fragment_frag__cadastrar__usuario" >
+        <action
+            android:id="@+id/action_frag_Cadastrar_Usuario_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/frag_Perifl_Usuario"
+        android:name="com.ponto.ideal.solucoes.equipe_vision.ui.cadastro.Frag_Perifl_Usuario"
+        android:label="fragment_frag__perifl__usuario"
+        tools:layout="@layout/fragment_frag__perifl__usuario" >
+        <action
+            android:id="@+id/action_frag_Perifl_Usuario_to_home"
+            app:destination="@id/home" />
+    </fragment>
+</navigation>

@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clcad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toStartOf="@+id/mprogressBar"
+        app:layout_constraintStart_toStartOf="@+id/mprogressBar"
+        app:layout_constraintTop_toTopOf="@+id/cardView1">
+,
+
+        <TextView
+            android:id="@+id/txtreccli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Refresh Cliente"
+            android:textColor="@color/fundo_azul_escuro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgrecar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtreccli"
+            app:layout_constraintEnd_toStartOf="@+id/txtreccli"
+            app:layout_constraintTop_toTopOf="@+id/txtreccli"
+            app:srcCompat="@drawable/ic_baseline_replay_24" />
+
+
+        <TextView
+            android:id="@+id/ttncpf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/cpf"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/cvcpf"
+            app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Data Cadastro:"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/txtdata"
+            app:layout_constraintStart_toStartOf="@+id/txtdata"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="00/00/0000"
+            android:textColor="@color/fundo_azul_escuro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <LinearLayout
+            android:id="@+id/llstat"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/cvstat"
+            app:layout_constraintEnd_toStartOf="@+id/cvstat"
+            app:layout_constraintTop_toTopOf="@+id/cvstat"></LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvstat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:padding="2dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cvcpf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/spstat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvcpf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ttncpf">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edtcpf"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:ems="8"
+                    android:gravity="bottom|center"
+                    android:inputType="number"
+                    android:maxLength="14"
+                    android:textColor="@color/fundo_azul_escuro"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tx38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Nome*"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/cardView1"
+            app:layout_constraintTop_toBottomOf="@+id/cvcpf" />
+
+        <TextView
+            android:id="@+id/txtcontnome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/contar_50"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tx38"
+            app:layout_constraintStart_toEndOf="@+id/tx38"
+            app:layout_constraintTop_toTopOf="@+id/tx38" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvnome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tx38">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edtnome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:inputType="textNoSuggestions|textCapWords"
+                    android:maxLength="50"
+                    android:textColor="@color/fundo_azul_escuro"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/ttapel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Apelido*"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/cardView5"
+            app:layout_constraintTop_toBottomOf="@id/cvnome" />
+
+        <TextView
+            android:id="@+id/txtcontapelido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/contar_15"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ttapel"
+            app:layout_constraintStart_toEndOf="@+id/ttapel"
+            app:layout_constraintTop_toTopOf="@id/ttapel" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvapel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ttapel">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edtapelido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="8"
+                    android:inputType="textNoSuggestions|textCapWords"
+                    android:maxLength="15"
+                    android:textColor="@color/fundo_azul_escuro"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/ttfone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/telefone"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/cvfone"
+            app:layout_constraintTop_toTopOf="@+id/ttapel" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvfone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cvapel"
+            app:layout_constraintTop_toBottomOf="@id/ttfone">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/edtfone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="8"
+                    android:gravity="bottom"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:textColor="@color/fundo_azul_escuro"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/ttemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/e_mail"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/cvapel"
+            app:layout_constraintTop_toBottomOf="@+id/cvapel" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvemail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ttemail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edtemail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:inputType="textNoSuggestions|textCapWords"
+                    android:maxLength="60"
+                    android:textColor="@color/fundo_azul_escuro"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtcontemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/contar_letras"
+            android:text="@string/contar_60"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ttemail"
+            app:layout_constraintStart_toEndOf="@+id/ttemail"
+            app:layout_constraintTop_toTopOf="@+id/ttemail" />
+
+        <ProgressBar
+            android:id="@+id/mprogressBar"
+            style="@android:style/Widget.Holo.ProgressBar.Small"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="144dp"
+            android:elevation="10dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/complemento"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/cardView4"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Endereço*"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/cardView1"
+            app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Número*"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/cardView5"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/cep"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/cardView2"
+            app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/txtcontcompl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/contar_letras"
+            android:text="@string/contar_30"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView10"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/txtcontend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/contar_80"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edtendereco"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:autoSizeStepGranularity="3dp"
+                    android:autoSizeTextType="uniform"
+                    android:autofillHints=""
+                    android:ellipsize="end"
+                    android:inputType="textNoSuggestions|textCapWords"
+                    android:maxLength="80"
+                    android:textColor="@color/fundo_azul_escuro"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edtnumero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="3"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:textColor="@color/fundo_azul_escuro"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp"
+            app:layout_constraintStart_toEndOf="@+id/cardView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edtcep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:textColor="@color/fundo_azul_escuro"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:id="@+id/edtcompl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:autoSizeStepGranularity="3dp"
+                    android:autoSizeTextType="uniform"
+                    android:autofillHints=""
+                    android:ellipsize="middle"
+                    android:ems="8"
+                    android:gravity="bottom"
+                    android:inputType="textNoSuggestions|textCapWords"
+                    android:maxLength="30"
+                    android:textColor="@color/fundo_azul_escuro"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btcad"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/salvar"
+            android:textColor="@color/fundo_azul_escuro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view7"
+            app:rippleColor="@color/fundo_azul_escuro"
+            app:strokeColor="@color/fundo_azul_escuro" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btcancel"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/cancelar"
+            android:textColor="@color/fundo_azul_escuro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btcad"
+            app:rippleColor="@color/fundo_azul_escuro"
+            app:strokeColor="@color/fundo_azul_escuro" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvemail" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="* Itens Obrigatórios"
+            android:textColor="@color/fundo_azul_escuro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.561"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Status"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/cvstat"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="@+id/llstat"
+            app:layout_constraintTop_toBottomOf="@+id/txtdata" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Posição Financeira"
+            android:textColor="@color/fundo_azul_escuro"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/txtfin"
+            app:layout_constraintStart_toStartOf="@+id/llfin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/llfin"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/txtfin"
+            app:layout_constraintEnd_toStartOf="@+id/txtfin"
+            app:layout_constraintTop_toTopOf="@+id/txtfin"></LinearLayout>
+
+        <TextView
+            android:id="@+id/txtfin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Inadimplente"
+            android:textColor="@color/fundo_azul_escuro"
+            app:layout_constraintEnd_toStartOf="@+id/imgrecar"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
